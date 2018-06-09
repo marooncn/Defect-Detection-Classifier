@@ -36,8 +36,8 @@
 * scikit-learn `sudo pip install scikit-learn`
 ### run ###
 ~~~
-# read readme.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
-# dataset
+# read README.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
+# dataset(there are too much files to upload in one folder, so we add the other but you should merge them.
 cp -rf normal_add/* ./normal
 rm -rf normal_add/
 cp -rf defect_add/* ./defect
