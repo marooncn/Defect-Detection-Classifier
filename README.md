@@ -11,7 +11,7 @@
       ern) extract features of preprocessed images as the input of SVM.
 * CNN+SVM(rbf kernel)
         
-      Use VGG19 to extract features as the input of SVM., the weight of VGG19 is trained by imagenet.
+      Use VGG19 to extract features as the input of SVM., the weight of VGG19 is trained on ImageNet.
 * simple CNN(3 Conv+1 FC)
 
       Build a simple neural network to train. The network consists of three convolutional layers and a fully
@@ -36,6 +36,7 @@
 * scikit-learn `sudo pip install scikit-learn`
 ### run ###
 ~~~
+# read readme.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
 # dataset
 cp -rf normal_add/* ./normal
 rm -rf normal_add/
