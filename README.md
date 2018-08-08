@@ -2,7 +2,15 @@
     Defect detection of water-cooled wall. The sample is hard to collect, so we only have a little dataset 
     which includes 320 training images(160 normal+ 160 defect) and 80 testing images(40 normal+ 40 defect). 
     The image size is 256*256. The dataset is collected by Dong Jin.
-## Classifier 
+## dataset 
+    the above three images are normal examples and the below are defect.
+![normal1](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/normal/2.jpg)
+![normal2](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/normal/3.jpg)
+![normal3](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/normal/4.jpg)
+![defect1](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/defect/2.jpg)
+![defect2](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/defect/3.jpg)
+![defect3](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/defect/4.jpg)
+## Classifier
     We use Support Vector Machine(SVM) with different feature extractors and Convolutional Neural Network 
     to train the classifier.
 * Gauss filter+LBP+SVM(rbf kernel)
@@ -52,9 +60,3 @@ python transferLearning.py
 ## reference
 [scikit-learn tutorial](http://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC.html) </br>
 [Building powerful image classification models using very little data](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html)
-
-
-  
-
-    
-    
