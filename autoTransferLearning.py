@@ -1,4 +1,7 @@
 import autokeras as ak
+from autokeras.image_supervised import load_image_dataset
+from keras.models import load_model
+from keras.utils import plot_model
 import transferLearning
 import h5py
 import numpy as np
@@ -27,10 +30,18 @@ def train_model():
     y = clf.evaluate(validation_data, validation_labels)
 
     print("auto Transfer Learning accuracy: %f" % y)
+    clf.load_searcher().load_best_model().produce_keras_model().save('transfer_model.h5')
+
+
+def visualize_model():
+    model = load_model('transfer_model.h5')  #See 'How to export keras models?' to generate this file before loading it.
+    plot_model(model, to_file='transfer_model.png')
 
 
 if __name__ == '__main__':
     if not os.path.exists(bottleneck_features_train and bottleneck_features_validation):
         transferLearning.save_bottlebeck_features()
     train_model()
+    visualize_model()
+
 
