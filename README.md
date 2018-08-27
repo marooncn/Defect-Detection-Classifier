@@ -1,4 +1,4 @@
-6## Defect-Detection-Classifier
+## Defect-Detection-Classifier
     Defect detection of water-cooled wall. The sample is hard to collect, so we only have a little dataset 
     which includes 320 training images(160 normal+ 160 defect) and 80 testing images(40 normal+ 40 defect). 
     The image size is 256*256. The dataset is collected by Dong Jin.
