@@ -24,9 +24,9 @@
 
       Build a simple neural network to train. The network consists of three convolutional layers and a fully
       connected layer.
-* transfer Learning(VGG19)
+* transfer Learning(VGG16)
     
-      Use VGG19 to extract features as input of a simple network that consists of a fully-connected layer.
+      Use VGG16 to extract features as input of a simple network that consists of a fully-connected layer.
 ### Result
  
 |           classifier                   |   accuracy   | 
@@ -34,7 +34,7 @@
 |    Gauss filter+LBP+SVM(rbf kernel)    |    97.25%    | 
 |         CNN+SVM(rbf kernel)            |    73.75%    | 
 |       simple CNN(3 Conv+1 FC)          |    68.75%    | 
-|       transfer Learning(VGG19)         |    82.50%    | 
+|       transfer Learning(VGG16)         |    82.50%    | 
 
 ## run
 ### Dependencies ###
@@ -54,7 +54,7 @@ rm -rf defect_add
 python cnnSVM.py
 # simple CNN(3 Conv+1 FC)
 python CNNclassifier.py
-# transfer Learning(VGG19)
+# transfer Learning(VGG16)
 python transferLearning.py
 ~~~
 ## reference
