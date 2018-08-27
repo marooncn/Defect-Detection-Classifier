@@ -1,4 +1,4 @@
-## Defect-Detection-Classifier
+6## Defect-Detection-Classifier
     Defect detection of water-cooled wall. The sample is hard to collect, so we only have a little dataset 
     which includes 320 training images(160 normal+ 160 defect) and 80 testing images(40 normal+ 40 defect). 
     The image size is 256*256. The dataset is collected by Dong Jin.
@@ -19,7 +19,7 @@
       ern) extract features of preprocessed images as the input of SVM.
 * CNN+SVM(rbf kernel)
         
-      Use VGG19 to extract features as the input of SVM., the weight of VGG19 is trained on ImageNet.
+      Use VGG16 to extract features as the input of SVM., the weight of VGG16 is trained on ImageNet.
 * simple CNN(3 Conv+1 FC)
 
       Build a simple neural network to train. The network consists of three convolutional layers and a fully
