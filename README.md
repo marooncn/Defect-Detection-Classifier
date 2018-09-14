@@ -1,8 +1,8 @@
 ## Defect-Detection-Classifier
     Defect detection of water-cooled wall. The sample is hard to collect, so we only have a little dataset 
     which includes 320 training images(160 normal+ 160 defect) and 80 testing images(40 normal+ 40 defect). 
-    The image size is 256*256. The dataset is collected by Dong Jin. Thank the advice from Yu Fang about the
-    using of gcForest.
+    The image size is 256*256. The dataset is collected by Dong Jin. Thanks the advice from Yu Fang about 
+    the using of gcForest.
 ## dataset 
     the above three images are normal examples and the below are defect.
 ![normal1](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/normal/2.jpg)
