@@ -1,1 +1,1 @@
-The file is too big to upload and I save it in other website. Download [weights file](https://pan.baidu.com/s/1hgLFZzZqSnsRsvVST-52lQ) and put the file in this folder.
+The file is too big to upload and I save it in other website. Download [weights file](https://github.com/MinerKasch/applied_deep_learning/blob/master/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5) and put the file in this folder.
