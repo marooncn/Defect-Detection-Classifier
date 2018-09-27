@@ -30,12 +30,14 @@
       Use VGG16 to extract features as input of a simple network that consists of a fully-connected layer.
 ### Result
  
-|           classifier                   |   accuracy   | 
-|----------------------------------------|--------------|
-|    Gauss filter+LBP+SVM(rbf kernel)    |    97.25%    | 
-|         CNN+SVM(rbf kernel)            |    73.75%    | 
-|       simple CNN(3 Conv+1 FC)          |    68.75%    | 
-|       transfer Learning(VGG16)         |    82.50%    | 
+|                classifier                  |   accuracy   | 
+|--------------------------------------------|--------------|
+|      Gauss filter+LBP+SVM(rbf kernel)      |    97.25%    | 
+|            CNN+SVM(rbf kernel)             |    73.75%    | 
+|          simple CNN(3 Conv+1 FC)           |    68.75%    | 
+|         transfer Learning(VGG16)           |    82.50%    | 
+|  gcForest (without multi-grained forests)  |    77.50%    |
+| gcForest (with multi-grained forests, i=6) |    83.75%    |
 
 ## run
 ### Dependencies ###
@@ -43,6 +45,7 @@
 * NumPy `sudo pip install numpy`
 * h5py `sudo pip install h5py`
 * scikit-learn `sudo pip install scikit-learn`
+* gcForest[https://github.com/kingfengji/gcForest] 
 ### run ###
 ~~~
 # read README.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
@@ -57,6 +60,11 @@ python cnnSVM.py
 python CNNclassifier.py
 # transfer Learning(VGG16)
 python transferLearning.py
+# gcForest (without multi-grained forests) 
+cd gcForest
+python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-ca.json
+# gcForest (with multi-grained forests, i=6) 
+python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-gc6.json
 ~~~
 ## reference
 [scikit-learn tutorial](http://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC.html) </br>
