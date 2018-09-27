@@ -12,8 +12,8 @@
 ![defect2](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/defect/3.jpg)
 ![defect3](https://github.com/marooncn/Defect-Detection-Classifier/blob/master/data/train/defect/4.jpg)
 ## Classifier
-    We use Support Vector Machine(SVM) with different feature extractors and Convolutional Neural Network 
-    to train the classifier.
+    We use Support Vector Machine(SVM) with different feature extractors, deep forest and Convolutional Neural 
+    Network to train the classifier.
 * Gauss filter+LBP+SVM(rbf kernel)
         
       Use Gaussian filter and laplacian operator to denoise and extracts edges, then LBP(Local Binary Patt-
