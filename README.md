@@ -45,7 +45,7 @@
 * NumPy `sudo pip install numpy`
 * h5py `sudo pip install h5py`
 * scikit-learn `sudo pip install scikit-learn`
-* gcForest[https://github.com/kingfengji/gcForest] 
+* [gcForest](https://github.com/kingfengji/gcForest)
 ### run ###
 ~~~
 # read README.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
