@@ -24,10 +24,10 @@ def train_model():
 
 def visualize_model():
     model = load_model('shallowCNN_model.h5') #See 'How to export keras models?' to generate this file before loading it.
-    plot_model(model, to_file='shallowCNN_model.png')
+    # plot_model(model, to_file='shallowCNN_model.png')
+    model.summary()
 
-
+    
 if __name__ == '__main__':
     train_model()
     visualize_model()
-
