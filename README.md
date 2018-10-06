@@ -19,7 +19,7 @@
       Use Gaussian filter and laplacian operator to denoise and extracts edges, then LBP(Local Binary Patt-
       ern) extract features of preprocessed images as the input of SVM.
 * CNN+SVM(rbf kernel)
-        
+      
       Use VGG16 to extract features as the input of SVM., the weight of VGG16 is trained on ImageNet.
 * simple CNN(3 Conv+1 FC)
 
@@ -42,7 +42,7 @@
 |            CNN+SVM(rbf kernel)             |    73.75%    | 
 |          simple CNN(3 Conv+1 FC)           |    68.75%    | 
 |         transfer Learning(VGG16)           |    82.50%    |
-|          Neural Network Search             |    82.25%    |
+|          Neural Network Search             |    82.28%    |
 |  gcForest (without multi-grained forests)  |    77.50%    |
 | gcForest (with multi-grained forests, i=6) |    83.75%    |
 
