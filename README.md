@@ -14,8 +14,7 @@
 ## Classifier
     We use Support Vector Machine(SVM) with different feature extractors, deep forest and Convolutional Neural 
     Network to train the classifier.
-* Gauss filter+LBP+SVM(rbf kernel)
-        
+* Gauss filter+LBP+SVM(rbf kernel)        
       Use Gaussian filter and laplacian operator to denoise and extracts edges, then LBP(Local Binary Patt-
       ern) extract features of preprocessed images as the input of SVM.
 * CNN+SVM(rbf kernel)
@@ -44,7 +43,7 @@
 |         transfer Learning(VGG16)           |    82.50%    |
 |          Neural Network Search             |    82.28%    |
 |  gcForest (without multi-grained forests)  |    77.50%    |
-| gcForest (with multi-grained forests, i=6) |    83.75%    |
+| gcForest (with multi-grained forests, i=6) |    86.25%    |
 
 ## run
 ### Dependencies ###
