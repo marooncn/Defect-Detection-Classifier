@@ -14,7 +14,8 @@
 ## Classifier
     We use Support Vector Machine(SVM) with different feature extractors, deep forest and Convolutional Neural 
     Network to train the classifier.
-* Gauss filter+LBP+SVM(rbf kernel)        
+* Gauss filter+LBP+SVM(rbf kernel)
+
       Use Gaussian filter and laplacian operator to denoise and extracts edges, then LBP(Local Binary Patt-
       ern) extract features of preprocessed images as the input of SVM.
 * CNN+SVM(rbf kernel)
@@ -68,13 +69,18 @@ python cnnSVM.py
 python CNNclassifier.py
 # transfer Learning(VGG16)
 python transferLearning.py
-# Neural Network Search 
+# Neural Network Search
+python ./data/train/write_label2.py
+python ./data/test/write_label2.py
 python autoCNNclassifier.py
 # gcForest (without multi-grained forests) 
+python ./data/train/write_label.py
+python ./data/test/write_label.py
 cd gcForest
 python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-ca.json
 # gcForest (with multi-grained forests, i=8) 
 python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-gc8.json
+
 ~~~
 ## reference
 [scikit-learn tutorial](http://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC.html) </br>
