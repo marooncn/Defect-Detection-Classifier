@@ -53,7 +53,7 @@
 * h5py `sudo pip install h5py`
 * scikit-learn `sudo pip install scikit-learn`
 * [gcForest](https://github.com/kingfengji/gcForest)
-* [AutoKeras](https://github.com/jhfjhfj1/autokeras)
+* [AutoKeras](https://github.com/jhfjhfj1/autokeras) <br>
 compile from source code and revise according to [this issue](https://github.com/jhfjhfj1/autokeras/issues/144)
 ### run ###
 ~~~
