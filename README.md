@@ -43,7 +43,7 @@
 |         transfer Learning(VGG16)           |    82.50%    |
 |          Neural Network Search             |    82.28%    |
 |  gcForest (without multi-grained forests)  |    77.50%    |
-| gcForest (with multi-grained forests, i=6) |    86.25%    |
+| gcForest (with multi-grained forests, i=8) |    88.75%    |
 
 ## run
 ### Dependencies ###
@@ -73,8 +73,8 @@ python autoCNNclassifier.py
 # gcForest (without multi-grained forests) 
 cd gcForest
 python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-ca.json
-# gcForest (with multi-grained forests, i=6) 
-python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-gc6.json
+# gcForest (with multi-grained forests, i=8) 
+python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-gc8.json
 ~~~
 ## reference
 [scikit-learn tutorial](http://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC.html) </br>
