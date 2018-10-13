@@ -69,18 +69,17 @@ python cnnSVM.py
 python CNNclassifier.py
 # transfer Learning(VGG16)
 python transferLearning.py
+# gcForest (without multi-grained forests) 
+python ./data/train/write_label.py
+python ./data/test/write_label.py
+cd 
+python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-ca.json
+# gcForest (with multi-grained forests, i=8) 
+python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-gc8.json
 # Neural Network Search
 python ./data/train/write_label2.py
 python ./data/test/write_label2.py
 python autoCNNclassifier.py
-# gcForest (without multi-grained forests) 
-python ./data/train/write_label.py
-python ./data/test/write_label.py
-cd gcForest
-python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-ca.json
-# gcForest (with multi-grained forests, i=8) 
-python demo_Defect-Detection-Classifier.py --model demo_Defect-Detection-Classifier-gc8.json
-
 ~~~
 ## reference
 [scikit-learn tutorial](http://scikit-learn.org/dev/modules/generated/sklearn.svm.SVC.html) </br>
