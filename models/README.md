@@ -1,1 +1,1 @@
-The pre-trained weight file VGG16 is too big to upload and I save it in other website. Download [weights file](https://github.com/MinerKasch/applied_deep_learning/blob/master/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5) and rename it as vgg16_weights.h5 in this folder.
+The pre-trained weight file VGG16 is too big to upload and I save it in other website. Download [weights file](https://github.com/MinerKasch/applied_deep_learning/blob/master/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5) in this folder.
