@@ -39,7 +39,7 @@
 |                classifier                  |   accuracy   | 
 |--------------------------------------------|--------------|
 |      Gauss filter+LBP+SVM(rbf kernel)      |    97.25%    | 
-|            CNN+SVM(rbf kernel)             |    73.75%    | 
+|            CNN+SVM(rbf kernel)             |    71.25%    | 
 |          simple CNN(3 Conv+1 FC)           |    70.00%    | 
 |         transfer Learning(VGG16)           |    82.50%    |
 |          Neural Network Search             |    82.28%    |
