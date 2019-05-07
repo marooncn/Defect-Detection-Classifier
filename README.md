@@ -72,7 +72,6 @@ python transferLearning.py
 # gcForest (without multi-grained forests) 
 python ./data/train/write_label.py
 python ./data/test/write_label.py
-cd 
 python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-ca.json
 # gcForest (with multi-grained forests, i=8) 
 python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-gc8.json
