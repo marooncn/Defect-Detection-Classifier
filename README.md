@@ -43,7 +43,7 @@
 |          simple CNN(3 Conv+1 FC)           |    72.50%    | 
 |         transfer Learning(VGG16)           |    81.25%    |
 |          Neural Network Search             |    82.28%    |
-|  gcForest (without multi-grained forests)  |    77.50%    |
+|  gcForest (without multi-grained forests)  |    80.00%    |
 | gcForest (with multi-grained forests, i=8) |    88.75%    |
 
 ## run
