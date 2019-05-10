@@ -10,7 +10,7 @@ validation_data_dir = "./data/test"
 
 def train_model():
 
-    clf = ak.ImageClassifier()
+    clf = ak.ImageClassifier(verbose=True, augment=False)
     train_data, train_labels = load_image_dataset(csv_file_path=train_data_dir+"/label.csv",
                                       images_path=train_data_dir)
     validation_data, validation_labels = load_image_dataset(csv_file_path=validation_data_dir+"/label.csv",
