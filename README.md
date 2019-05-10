@@ -54,7 +54,7 @@
 * scikit-learn `sudo pip install scikit-learn`
 * [gcForest](https://github.com/kingfengji/gcForest)
 * [AutoKeras](https://github.com/jhfjhfj1/autokeras) <br>
-Currently, Auto-Keras is only compatible with: Python 3.6. And we need install the depedencies under python3.[2019.5.10]
+Currently, Auto-Keras is only compatible with: Python 3.6. And we need to install the depedencies under python3. [2019.5.10]
 ### run ###
 ~~~
 # read README.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
