@@ -51,7 +51,7 @@
 * [gcForest](https://github.com/kingfengji/gcForest) <br>
 * [AutoKeras](https://github.com/jhfjhfj1/autokeras) <br>
 Currently, Auto-Keras is only compatible with: Python 3.6. And we need to install the depedencies under python3. [2019.5.10]
-* [others] 
+* others
     
       pip install -r requirements.txt
 ### run ###
