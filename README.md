@@ -54,8 +54,7 @@
 * scikit-learn `sudo pip install scikit-learn`
 * [gcForest](https://github.com/kingfengji/gcForest)
 * [AutoKeras](https://github.com/jhfjhfj1/autokeras) <br>
-compile from source code and revise according to [this issue](https://github.com/jhfjhfj1/autokeras/issues/144)
-currently, Auto-Keras is only compatible with: Python 3.6. And we need install the depedencies under python3.
+Currently, Auto-Keras is only compatible with: Python 3.6. And we need install the depedencies under python3.[2019.5.10]
 ### run ###
 ~~~
 # read README.md in models folder and download weight file of pre-trained VGG on the ImageNet dataset.
@@ -76,7 +75,7 @@ python ./data/test/write_label.py
 python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-ca.json
 # gcForest (with multi-grained forests, i=8) 
 python ./gcForest/demo_Defect-Detection-Classifier.py --model ./gcForest/demo_Defect-Detection-Classifier-gc8.json
-# Neural Network Search
+# Neural Network Search, copy autokeras dir to current path after it is installed from source.
 python ./data/train/write_label2.py
 python ./data/test/write_label2.py
 python3 autoCNNclassifier.py
