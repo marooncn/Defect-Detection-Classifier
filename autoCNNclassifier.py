@@ -1,5 +1,5 @@
 import autokeras as ak
-from autokeras.image_supervised import load_image_dataset
+from autokeras.image.image_supervised import load_image_dataset
 from keras.models import load_model
 from keras.utils import plot_model
 
