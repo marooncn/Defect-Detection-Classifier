@@ -3,11 +3,13 @@ import transferLearning
 import h5py
 import numpy as np
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1"
 
 bottleneck_features_train = './bottleneck_features_train.npy'
 bottleneck_features_validation = './bottleneck_features_validation.npy'
 nb_train_samples = 320
 nb_validation_samples = 80
+
 
 def train_svm():
     train_data = np.load(open('bottleneck_features_train.npy'))

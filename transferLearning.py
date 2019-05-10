@@ -1,12 +1,14 @@
+import numpy as np
+np.random.seed(0)
+
 from keras.models import Sequential
-from keras.layers import Conv2D, MaxPooling2D
-from keras.layers import Activation, Dropout, Flatten, Dense
+from keras.layers import Activation, Dropout, Flatten, Dense, BatchNormalization
 from keras.preprocessing.image import ImageDataGenerator
 from keras import applications
 import h5py
 import numpy as np
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL']='2' # build TensorFlow from source, it can be faster on your machine.
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] ='2'   # build TensorFlow from source, it can be faster on your machine.
 
 
 train_data_dir = './data/train'
@@ -39,6 +41,7 @@ def save_bottlebeck_features():
         batch_size=batch_size,
         class_mode=None,
         shuffle=False)
+
     bottleneck_features_train = model.predict_generator(
         generator, nb_train_samples // batch_size)
     np.save(open('bottleneck_features_train.npy', 'w'),
@@ -50,6 +53,7 @@ def save_bottlebeck_features():
         batch_size=batch_size,
         class_mode=None,
         shuffle=False)
+
     bottleneck_features_validation = model.predict_generator(
         generator, nb_validation_samples // batch_size)
     np.save(open('bottleneck_features_validation.npy', 'w'),
@@ -67,11 +71,13 @@ def train_top_model():
 
     model = Sequential()
     model.add(Flatten(input_shape=train_data.shape[1:]))
-    model.add(Dense(256, activation='relu'))
-    model.add(Dropout(0.5))
+    model.add(Dense(256))
+    model.add(BatchNormalization())
+    model.add(Activation('relu'))
+    # model.add(Dropout(0.5))
     model.add(Dense(1, activation='sigmoid'))
 
-    model.compile(optimizer='rmsprop',
+    model.compile(optimizer='adam',
                   loss='binary_crossentropy', metrics=['accuracy'])
 
     model.fit(train_data, train_labels,
@@ -80,7 +86,6 @@ def train_top_model():
               validation_data=(validation_data, validation_labels))
     model.save_weights(top_model_weights_path)  
     print("Saved model %s" % top_model_weights_path)
-
 
 
 if __name__ == '__main__':
