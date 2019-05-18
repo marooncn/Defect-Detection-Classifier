@@ -19,7 +19,8 @@ from sklearn.ensemble import RandomForestClassifier # 随机森林分类器
 from sklearn.metrics import accuracy_score # metrics 度量 准确率分数
 from skimage import io,color
 
-sys.path.insert(0, "../lib")  # 0为优先级，最先搜索
+# add the lib path
+sys.path.insert(0, "./gcForest/gcForest/lib")  # 0为优先级，最先搜索
 
 from gcforest.gcforest import GCForest
 from gcforest.utils.config_utils import load_json
@@ -96,7 +97,7 @@ if __name__ == "__main__":
     # If the model you use cost too much memory for you.
     # You can use these methods to force gcforest not keeping model in memory
     # gc.set_keep_model_in_mem(False), default is TRUE.
-    #gc.set_keep_model_in_mem(False)
+    gc.set_keep_model_in_mem(False)
 
     (X_train, y_train), (X_test, y_test) = load_defect_data()
     print('X_train.shape', X_train.shape, 'X_test', X_test.shape, 'y_train', y_train.shape, 'y_test', y_test.shape)
@@ -105,7 +106,7 @@ if __name__ == "__main__":
     X_test = X_test[:, np.newaxis, :, :]
 
 
-    X_train_enc = gc.fit_transform(X_train, y_train)
+    X_train_enc = gc.fit_transform(X_train,y_train, X_test=X_test, y_test=y_test)
     # X_enc is the concatenated predict_proba result of each estimators of the last layer of the GCForest model
     # X_enc.shape =
     #   (n_datas, n_estimators * n_classes): If cascade is provided
